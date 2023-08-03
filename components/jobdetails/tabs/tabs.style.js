@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   container: {
     marginTop: SIZES.small,
     marginBottom: SIZES.small / 2,
+    paddingHorizontal: SIZES.medium,
   },
   btn: (name, activeTab) => ({
     paddingVertical: SIZES.medium,
@@ -13,6 +14,7 @@ const styles = StyleSheet.create({
     backgroundColor: name === activeTab ? COLORS.primary : "#F3F4F8",
     borderRadius: SIZES.medium,
     marginLeft: 2,
+    marginRight: 2,
     ...SHADOWS.medium,
     shadowColor: COLORS.white,
   }),

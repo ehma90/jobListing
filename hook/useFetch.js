@@ -22,7 +22,6 @@ const useFetch = (endpoint, query) => {
       const response = await Axois.request(options);
 
       setData(response.data.data);
-      console.log(response.data.data);
       setIsLoading(false);
     } catch (error) {
       console.log("Error fetching data:", error);
